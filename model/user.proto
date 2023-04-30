@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_VERSION_SUFFIX
+package model;
+
+option go_package = "github.com/goprotomodel;model";
+
+message User {
+  string user_id = 1;
+  string name = 2;
+}
